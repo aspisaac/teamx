@@ -149,5 +149,62 @@ def Skyscraper():
     x.forward(300)
     x.left(90)
     x.end_fill()
+   
+def drawCar():
+    #By Caleb
+    #outline of car
+    x.begin_fill()
+    x.fillcolor("red")
+    x.forward(275)
+    #grill
+    for i in range(330):
+        x.forward(.1)
+        x.left(.5)
+    x.forward(50)
+    x.right(40)
+    x.forward(45)
+    x.left(55)
+    x.forward(175)
+    x.left(55)
+    x.forward(35)
+    x.right(40)
+    x.forward(25)
+    x.left(75)
+    x.forward(37)
+    x.left(90)
+    x.forward(10)
+    x.forward(35)
+    x.right(90)
+    x.end_fill()
+
+def drawWheels():
+    #left wheel
+    x.begin_fill()
+    x.fillcolor("black")
+    for i in range(720):
+        x.forward(.1)
+        x.left(.25)
+    x.left(90)
+    x.forward(45)
+    x.left(90)
+    for i in range(720):
+        x.forward(.1)
+        x.left(.25)
+    x.end_fill()
+    #middle bottom
+    x.right(90)
+    x.forward(125)
+    x.right(90)
+    #right wheel
+    x.begin_fill()
+    x.fillcolor("black")
+    for i in range(720):
+        x.forward(.1)
+        x.left(.25)
+    x.end_fill()
+
+
+drawCar()
+drawWheels()
 
 update()
